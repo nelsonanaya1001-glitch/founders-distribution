@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Founders Distribution LLC</title>
+    <meta name="description" content="Founders Distribution LLC is a lean Walmart marketplace operating partner built for founder-led consumer brands. Based in Miami Beach, FL.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-intro { background: var(--gray-50); }
+
+        .about-values {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+            margin-top: 60px;
+        }
+
+        .value-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 36px 32px;
+        }
+
+        .value-card h3 {
+            font-size: 17px; font-weight: 800;
+            color: var(--navy); margin-bottom: 12px;
+        }
+
+        .value-card p {
+            font-size: 14px; color: var(--gray-text);
+            line-height: 1.8;
+        }
+
+        .value-icon {
+            width: 46px; height: 46px;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 18px;
+        }
+
+        .mission-block {
+            background: linear-gradient(135deg, var(--navy), #1a3470);
+            border-radius: 20px;
+            padding: 60px;
+            color: white;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .mission-block h2 {
+            font-size: clamp(24px, 3vw, 36px);
+            font-weight: 900; line-height: 1.2;
+            margin-bottom: 20px; letter-spacing: -0.5px;
+        }
+
+        .mission-block h2 span { color: var(--teal); }
+
+        .mission-block p {
+            font-size: 16px; color: rgba(255,255,255,0.55);
+            line-height: 1.8; max-width: 600px; margin: 0 auto 32px;
+        }
+
+        .walmart-section { background: white; }
+
+        .walmart-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .walmart-list {
+            list-style: none;
+            display: flex; flex-direction: column; gap: 14px;
+            margin-top: 24px;
+        }
+
+        .walmart-list li {
+            display: flex; align-items: flex-start; gap: 12px;
+            font-size: 14px; color: var(--gray-text); line-height: 1.6;
+        }
+
+        .wl-dot {
+            width: 8px; height: 8px;
+            background: var(--orange);
+            border-radius: 50%; flex-shrink: 0; margin-top: 6px;
+        }
+
+        .walmart-cred-box {
+            background: var(--gray-50);
+            border: 1px solid var(--border);
+            border-radius: 16px; padding: 40px;
+        }
+
+        .walmart-cred-box h3 {
+            font-size: 16px; font-weight: 800; color: var(--navy); margin-bottom: 20px;
+        }
+
+        .cred-item {
+            display: flex; align-items: flex-start; gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .cred-item:last-child { border-bottom: none; }
+
+        .cred-icon {
+            width: 36px; height: 36px;
+            background: rgba(62,177,200,0.1);
+            border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .cred-label {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            color: var(--teal); margin-bottom: 2px;
+        }
+
+        .cred-value { font-size: 13px; color: var(--navy); font-weight: 600; }
+
+        @media (max-width: 768px) {
+            .about-values, .walmart-grid { grid-template-columns: 1fr; }
+            .mission-block { padding: 40px 28px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo">
+        <svg width="36" height="46" viewBox="0 0 36 46" fill="none">
+            <line x1="6" y1="6" x2="30" y2="6" stroke="#3eb1c8" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="6" y1="6" x2="6" y2="24" stroke="#3eb1c8" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="6" y1="24" x2="25" y2="24" stroke="#3eb1c8" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="6" y1="24" x2="6" y2="41" stroke="#3eb1c8" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="6" cy="6" r="5" fill="#1a1469"/><circle cx="30" cy="6" r="5" fill="#ff8674"/>
+            <circle cx="6" cy="24" r="5" fill="#1a1469"/><circle cx="25" cy="24" r="5" fill="#3eb1c8"/>
+            <circle cx="6" cy="41" r="5" fill="#1a1469"/>
+            <circle cx="18" cy="6" r="3" fill="#a4dbe8"/><circle cx="15.5" cy="24" r="3" fill="#a4dbe8"/>
+        </svg>
+        <div class="nav-logo-text">
+            <span class="nav-logo-line1">Founders <span>Distribution</span></span>
+            <span class="nav-logo-line2">LLC</span>
+        </div>
+    </a>
+    <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#services">What We Do</a></li>
+        <li><a href="index.html#who">Who We Serve</a></li>
+        <li><a href="contact.html" class="nav-cta-btn">Contact Us</a></li>
+    </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <svg class="page-hero-bg" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMid slice">
+        <line x1="0" y1="100" x2="300" y2="200" stroke="rgba(62,177,200,0.1)" stroke-width="1.5"/>
+        <line x1="300" y1="200" x2="700" y2="80" stroke="rgba(62,177,200,0.08)" stroke-width="1.5"/>
+        <line x1="700" y1="80" x2="1100" y2="250" stroke="rgba(62,177,200,0.07)" stroke-width="1.5"/>
+        <line x1="1100" y1="250" x2="1440" y2="120" stroke="rgba(62,177,200,0.07)" stroke-width="1.5"/>
+        <circle cx="300" cy="200" r="4" fill="rgba(62,177,200,0.2)"/>
+        <circle cx="700" cy="80" r="5" fill="rgba(255,134,116,0.25)"/>
+        <circle cx="1100" cy="250" r="4" fill="rgba(62,177,200,0.2)"/>
+    </svg>
+    <div class="page-hero-content">
+        <div class="page-eyebrow">About Us</div>
+        <h1>A <span class="hl">Lean</span> Operating<br>Partner for Founders</h1>
+        <p class="page-hero-sub">We built Founders Distribution to be the partner we wished existed — one that actually operates like a founder and prioritizes your brand's long-term success.</p>
+    </div>
+</div>
+
+<!-- MISSION -->
+<section class="section about-intro">
+    <div class="container">
+        <div class="mission-block">
+            <h2>Our Mission: Help Founder-Led<br>Brands <span>Win on Walmart.com</span></h2>
+            <p>Walmart.com is one of the most powerful and underutilized retail channels for emerging consumer brands. We exist to change that — with full operational support, honest economics, and a structure that keeps your cash in your business.</p>
+            <a href="contact.html" class="btn-primary">Work With Us</a>
+        </div>
+
+        <div class="about-values">
+            <div class="value-card">
+                <div class="value-icon" style="background:rgba(26,20,105,0.07)">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+                    </svg>
+                </div>
+                <h3>Radical Transparency</h3>
+                <p>Every fee, every margin, every decision — explained. We don't believe in complexity that serves us at the expense of your clarity.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon" style="background:rgba(62,177,200,0.1)">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3eb1c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                    </svg>
+                </div>
+                <h3>Founder-First Alignment</h3>
+                <p>We structure our partnerships so our success depends on your success. No bloated retainers. No incentives misaligned with your growth.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon" style="background:rgba(255,134,116,0.1)">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ff8674" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"/>
+                        <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                    </svg>
+                </div>
+                <h3>Capital Efficiency</h3>
+                <p>We know every dollar counts when you're a growing brand. Our model is lean by design so your margins stay intact as you scale.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon" style="background:rgba(26,20,105,0.07)">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                </div>
+                <h3>Operational Excellence</h3>
+                <p>We live and breathe Walmart.com. From onboarding to advertising to returns — we handle every operational layer with precision.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WALMART CREDIBILITY -->
+<section class="section walmart-section">
+    <div class="container">
+        <div class="walmart-grid">
+            <div>
+                <p class="section-eyebrow">Walmart Marketplace</p>
+                <h2 class="section-title">Why Walmart.com<br>for Your Brand?</h2>
+                <p style="font-size:15px;color:var(--gray-text);line-height:1.8;margin-bottom:8px;">
+                    Walmart.com is the second-largest ecommerce marketplace in the United States — and one of the most brand-friendly for consumer goods. With lower competition than Amazon and a growing customer base, it's a significant opportunity for brands ready to operate it correctly.
+                </p>
+                <ul class="walmart-list">
+                    <li><span class="wl-dot"></span>Lower cost-per-click and advertising spend vs. Amazon</li>
+                    <li><span class="wl-dot"></span>Growing marketplace seller ecosystem with less saturation</li>
+                    <li><span class="wl-dot"></span>Direct access to Walmart's 120M+ U.S. monthly shoppers</li>
+                    <li><span class="wl-dot"></span>Full-price shopping culture — less race to the bottom</li>
+                    <li><span class="wl-dot"></span>Opportunity to feed omni-channel retail growth</li>
+                </ul>
+            </div>
+            <div class="walmart-cred-box">
+                <h3>Our Business Credentials</h3>
+                <div class="cred-item">
+                    <div class="cred-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3eb1c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="cred-label">Legal Entity</p>
+                        <p class="cred-value">Founders Distribution LLC</p>
+                    </div>
+                </div>
+                <div class="cred-item">
+                    <div class="cred-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3eb1c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="cred-label">Headquarters</p>
+                        <p class="cred-value">Miami Beach, FL, USA</p>
+                    </div>
+                </div>
+                <div class="cred-item">
+                    <div class="cred-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3eb1c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="cred-label">Business Email</p>
+                        <p class="cred-value">info@foundersdistribution.com</p>
+                    </div>
+                </div>
+                <div class="cred-item">
+                    <div class="cred-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3eb1c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.6 11.55a19.79 19.79 0 01-3.07-8.67A2 2 0 013.52 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="cred-label">Customer Service</p>
+                        <p class="cred-value">305-519-9455</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST BAND -->
+<div class="trust-band">
+    <div class="trust-inner">
+        <div class="trust-left">
+            <h2>Ready to Grow on Walmart.com?</h2>
+            <p>Let's talk about your brand and what's possible.</p>
+        </div>
+        <a href="contact.html" class="btn-primary">Contact Us →</a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Founders Distribution LLC. All rights reserved. Miami Beach, FL.</p>
+        <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

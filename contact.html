@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Founders Distribution LLC</title>
+    <meta name="description" content="Get in touch with Founders Distribution LLC. Contact us to discuss Walmart marketplace distribution for your brand.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-page-body {
+            background: var(--gray-50);
+            padding: 60px 48px 100px;
+        }
+
+        .contact-page-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 380px 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .info-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px 36px;
+        }
+
+        .info-card h2 {
+            font-size: 20px; font-weight: 800;
+            color: var(--navy); margin-bottom: 8px;
+        }
+
+        .info-card .sub {
+            font-size: 13px; color: var(--gray-text);
+            line-height: 1.7; margin-bottom: 32px;
+        }
+
+        .form-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px 44px;
+        }
+
+        .form-card h2 {
+            font-size: 22px; font-weight: 800;
+            color: var(--navy); margin-bottom: 6px;
+        }
+
+        .form-card .sub {
+            font-size: 13px; color: var(--gray-text);
+            line-height: 1.7; margin-bottom: 36px;
+        }
+
+        /* Light form style */
+        .form-light .fg label {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            color: rgba(26,20,105,0.5);
+        }
+
+        .form-light .fg input,
+        .form-light .fg textarea,
+        .form-light .fg select {
+            background: var(--gray-50);
+            border: 1.5px solid rgba(26,20,105,0.1);
+            color: var(--navy);
+        }
+
+        .form-light .fg input:focus,
+        .form-light .fg textarea:focus,
+        .form-light .fg select:focus {
+            border-color: var(--teal);
+            background: white;
+        }
+
+        .form-light .fg input::placeholder,
+        .form-light .fg textarea::placeholder { color: rgba(26,20,105,0.3); }
+
+        .form-light .fg select option { background: white; color: var(--navy); }
+
+        .form-light .form-submit {
+            width: 100%; align-self: stretch;
+        }
+
+        .return-policy {
+            background: linear-gradient(135deg, var(--navy), #1a3470);
+            border-radius: 14px;
+            padding: 28px 32px;
+            margin-top: 24px;
+            color: white;
+        }
+
+        .return-policy h4 {
+            font-size: 13px; font-weight: 800;
+            text-transform: uppercase; letter-spacing: 1px;
+            color: var(--teal); margin-bottom: 10px;
+        }
+
+        .return-policy p {
+            font-size: 13px; color: rgba(255,255,255,0.6);
+            line-height: 1.7;
+        }
+
+        @media (max-width: 900px) {
+            .contact-page-inner { grid-template-columns: 1fr; }
+            .contact-page-body { padding: 40px 20px 80px; }
+            .form-card { padding: 32px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo">
+        <svg width="36" height="46" viewBox="0 0 36 46" fill="none">
+            <line x1="6" y1="6" x2="30" y2="6" stroke="#3eb1c8" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="6" y1="6" x2="6" y2="24" stroke="#3eb1c8" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="6" y1="24" x2="25" y2="24" stroke="#3eb1c8" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="6" y1="24" x2="6" y2="41" stroke="#3eb1c8" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="6" cy="6" r="5" fill="#1a1469"/><circle cx="30" cy="6" r="5" fill="#ff8674"/>
+            <circle cx="6" cy="24" r="5" fill="#1a1469"/><circle cx="25" cy="24" r="5" fill="#3eb1c8"/>
+            <circle cx="6" cy="41" r="5" fill="#1a1469"/>
+            <circle cx="18" cy="6" r="3" fill="#a4dbe8"/><circle cx="15.5" cy="24" r="3" fill="#a4dbe8"/>
+        </svg>
+        <div class="nav-logo-text">
+            <span class="nav-logo-line1">Founders <span>Distribution</span></span>
+            <span class="nav-logo-line2">LLC</span>
+        </div>
+    </a>
+    <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#services">What We Do</a></li>
+        <li><a href="index.html#who">Who We Serve</a></li>
+        <li><a href="contact.html" class="nav-cta-btn">Contact Us</a></li>
+    </ul>
+</nav>
+
+<div class="page-hero">
+    <svg class="page-hero-bg" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMid slice">
+        <line x1="0" y1="200" x2="400" y2="100" stroke="rgba(62,177,200,0.1)" stroke-width="1.5"/>
+        <line x1="400" y1="100" x2="900" y2="280" stroke="rgba(62,177,200,0.08)" stroke-width="1.5"/>
+        <line x1="900" y1="280" x2="1440" y2="80" stroke="rgba(62,177,200,0.07)" stroke-width="1.5"/>
+        <circle cx="400" cy="100" r="5" fill="rgba(255,134,116,0.25)"/>
+        <circle cx="900" cy="280" r="4" fill="rgba(62,177,200,0.2)"/>
+    </svg>
+    <div class="page-hero-content">
+        <div class="page-eyebrow">Contact</div>
+        <h1>Let's Talk About<br>Your <span class="hl">Brand</span></h1>
+        <p class="page-hero-sub">We typically respond within one business day. Tell us where you are and what you're building.</p>
+    </div>
+</div>
+
+<div class="contact-page-body">
+    <div class="contact-page-inner">
+
+        <!-- INFO SIDEBAR -->
+        <div>
+            <div class="info-card">
+                <h2>Business Information</h2>
+                <p class="sub">All the details you need to reach us or verify our credentials.</p>
+
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <div class="cd-icon" style="background:rgba(26,20,105,0.06);border-color:rgba(26,20,105,0.12)">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1a1469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="cd-label" style="color:var(--teal)">Legal Name</p>
+                            <p class="cd-value" style="color:var(--navy)">Founders Distribution LLC</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="cd-icon" style="background:rgba(26,20,105,0.06);border-color:rgba(26,20,105,0.12)">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1a1469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="cd-label" style="color:var(--teal)">Business Email</p>
+                            <p class="cd-value" style="color:var(--navy)"><a href="mailto:info@foundersdistribution.com" style="color:var(--navy)">info@foundersdistribution.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="cd-icon" style="background:rgba(26,20,105,0.06);border-color:rgba(26,20,105,0.12)">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1a1469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.6 11.55a19.79 19.79 0 01-3.07-8.67A2 2 0 013.52 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="cd-label" style="color:var(--teal)">Phone</p>
+                            <p class="cd-value" style="color:var(--navy)"><a href="tel:+13055199455" style="color:var(--navy)">305-519-9455</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="cd-icon" style="background:rgba(26,20,105,0.06);border-color:rgba(26,20,105,0.12)">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1a1469" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="cd-label" style="color:var(--teal)">Location</p>
+                            <p class="cd-value" style="color:var(--navy)">Miami Beach, FL, USA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="return-policy">
+                <h4>Returns &amp; Support</h4>
+                <p>For order-related inquiries, returns, or customer service questions, please email <strong>info@foundersdistribution.com</strong> or call <strong>305-519-9455</strong>. We respond within 1 business day.</p>
+            </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="form-card">
+            <h2>Send Us a Message</h2>
+            <p class="sub">Tell us about your brand, where you're currently selling, and what you're hoping to achieve on Walmart.com.</p>
+
+            <form class="contact-form form-light" name="contact-page" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact-page">
+                <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+
+                <div class="form-row">
+                    <div class="fg">
+                        <label for="fname2">First Name</label>
+                        <input type="text" id="fname2" name="first_name" placeholder="Jane" required>
+                    </div>
+                    <div class="fg">
+                        <label for="lname2">Last Name</label>
+                        <input type="text" id="lname2" name="last_name" placeholder="Doe" required>
+                    </div>
+                </div>
+                <div class="fg">
+                    <label for="email2">Email Address</label>
+                    <input type="email" id="email2" name="email" placeholder="jane@yourbrand.com" required>
+                </div>
+                <div class="fg">
+                    <label for="phone2">Phone (optional)</label>
+                    <input type="tel" id="phone2" name="phone" placeholder="(305) 000-0000">
+                </div>
+                <div class="fg">
+                    <label for="brand2">Brand / Company Name</label>
+                    <input type="text" id="brand2" name="brand" placeholder="Your Brand Name" required>
+                </div>
+                <div class="fg">
+                    <label for="website2">Website (optional)</label>
+                    <input type="url" id="website2" name="website" placeholder="https://yourbrand.com">
+                </div>
+                <div class="fg">
+                    <label for="category2">Product Category</label>
+                    <select id="category2" name="category">
+                        <option value="" disabled selected>Select a category</option>
+                        <option>Food &amp; Beverage</option>
+                        <option>Wellness &amp; Supplements</option>
+                        <option>Natural / Better-For-You</option>
+                        <option>Lifestyle &amp; Home</option>
+                        <option>Personal Care</option>
+                        <option>Other CPG</option>
+                    </select>
+                </div>
+                <div class="fg">
+                    <label for="message2">Tell Us About Your Brand</label>
+                    <textarea id="message2" name="message" placeholder="Where are you currently selling? What's your annual revenue range? What's your distribution goal?" style="min-height:140px"></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message →</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Founders Distribution LLC. All rights reserved. Miami Beach, FL.</p>
+        <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
