@@ -22,10 +22,11 @@
         .hero-bg { position: absolute; inset: 0; pointer-events: none; }
 
         .hero-content {
-            max-width: 700px;
+            max-width: 860px;
             position: relative;
             z-index: 2;
-            margin: 0 auto 0 0;
+            margin: 0 auto;
+            text-align: center;
         }
 
         .hero-eyebrow {
@@ -60,18 +61,18 @@
         #hero h1 .hl { color: var(--teal); }
 
         .hero-tagline {
-            font-size: 19px; font-weight: 500;
+            font-size: 26px; font-weight: 500;
             color: rgba(255,255,255,0.65);
-            margin-bottom: 22px; line-height: 1.5;
+            margin-bottom: 24px; line-height: 1.45;
         }
 
         .hero-body {
-            font-size: 15px; color: rgba(255,255,255,0.45);
-            max-width: 540px; line-height: 1.9;
-            margin-bottom: 52px;
+            font-size: 19px; color: rgba(255,255,255,0.5);
+            max-width: 720px; line-height: 1.85;
+            margin: 0 auto 52px;
         }
 
-        .hero-actions { display: flex; gap: 16px; align-items: center; }
+        .hero-actions { display: flex; gap: 16px; align-items: center; justify-content: center; }
 
         .btn-ghost {
             display: inline-flex; align-items: center; gap: 8px;
@@ -85,6 +86,7 @@
 
         .hero-trust {
             display: flex; gap: 32px; flex-wrap: wrap;
+            justify-content: center;
             margin-top: 60px; padding-top: 44px;
             border-top: 1px solid rgba(255,255,255,0.08);
         }
@@ -126,9 +128,6 @@
     </a>
     <ul class="nav-links">
         <li><a href="about.html">About</a></li>
-        <li><a href="#services">What We Do</a></li>
-        <li><a href="#who">Who We Serve</a></li>
-        <li><a href="#why">Why We're Different</a></li>
         <li><a href="contact.html" class="nav-cta-btn">Contact Us</a></li>
     </ul>
 </nav>
@@ -166,17 +165,14 @@
             Founder-Aligned Distribution
         </div>
         <h1>Founders<br><span class="hl">Distribution</span></h1>
-        <p class="hero-tagline">Founder-aligned distribution for emerging<br>retail and marketplace channels.</p>
+        <p class="hero-tagline">Founder-aligned distribution for Walmart.com and emerging retail and marketplace channels.</p>
         <p class="hero-body">
-            We help founder-led consumer brands launch, manage, and scale marketplace distribution with transparent economics, fulfillment support, and capital-aware growth strategy.
+            We help founder-led consumer brands launch, manage, and scale marketplace distribution with transparent economics, fulfillment support, and capital-aware growth strategies.
         </p>
         <div class="hero-actions">
             <a href="#contact" class="btn-primary">
                 Contact Us
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="#services" class="btn-ghost">
-                What We Do &nbsp;↓
             </a>
         </div>
         <div class="hero-trust">
@@ -192,8 +188,8 @@
 <section id="services" class="section" style="background:var(--gray-50)">
     <div class="container">
         <p class="section-eyebrow">What We Do</p>
-        <h2 class="section-title">Full-Service Marketplace<br>and Channel Operations</h2>
-        <p class="section-sub">End-to-end support so your brand can focus on product — we handle the channel.</p>
+        <h2 class="section-title">Full-Service Marketplace<br>and Channel Distribution</h2>
+        <p class="section-sub">End-to-end support so you can focus on building your brand.</p>
 
         <div class="services-grid">
             <div class="service-card">
@@ -254,14 +250,13 @@
             <div>
                 <p class="section-eyebrow">Who We Serve</p>
                 <h2 class="section-title">Built for<br>Founder-Led Brands</h2>
-                <p class="section-sub">We specialize in consumer brands where the founder is still in the room — where speed, capital efficiency, and trust matter most.</p>
+                <p class="section-sub">We specialize in consumer brands led by visionary and committed founders.</p>
                 <div class="who-tags">
                     <span class="tag">Natural &amp; Better-For-You</span>
                     <span class="tag">Food &amp; Beverage</span>
                     <span class="tag">Wellness</span>
                     <span class="tag">Lifestyle</span>
                     <span class="tag">CPG</span>
-                    <span class="tag">Emerging Brands</span>
                     <a href="contact.html" class="tag tag-more">And Many More &rarr;</a>
                 </div>
             </div>
@@ -272,8 +267,7 @@
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                         </svg>
                     </div>
-                    <h3>You focus on the <span>product</span>.<br>We own the channel.</h3>
-                    <p>From day-one setup to ongoing growth, we handle every layer of your marketplace and channel presence.</p>
+                    <p style="font-size:18px;font-weight:600;color:rgba(255,255,255,0.88);line-height:1.6;margin-bottom:28px;">From day-one setup to ongoing growth, we handle every layer of your marketplace and channel presence.</p>
                     <ul class="who-check-list">
                         <li>
                             <span class="check-dot">
@@ -349,23 +343,6 @@
     </div>
 </section>
 
-<!-- TRUST BAND -->
-<div class="trust-band">
-    <div class="trust-inner">
-        <div class="trust-left">
-            <h2>Launch-Ready from Day One</h2>
-            <p>Everything your brand needs to operate with credibility across retail and marketplace channels.</p>
-        </div>
-        <div class="trust-items">
-            <div class="trust-item"><span class="trust-dot"></span>Legal Business Entity</div>
-            <div class="trust-item"><span class="trust-dot"></span>U.S. Business Address</div>
-            <div class="trust-item"><span class="trust-dot"></span>Customer Service Line</div>
-            <div class="trust-item"><span class="trust-dot"></span>Returns Process</div>
-            <div class="trust-item"><span class="trust-dot"></span>Transparent Reporting</div>
-        </div>
-    </div>
-</div>
-
 <!-- CONTACT -->
 <section id="contact" class="contact-section">
     <div class="contact-layout">
@@ -374,51 +351,11 @@
             <h2 class="section-title">Let's Talk About<br>Your Brand</h2>
             <p class="section-sub">Ready to explore marketplace distribution? We'd love to learn about where you are and where you want to go.</p>
 
-            <div class="contact-details">
-                <div class="contact-detail">
-                    <div class="cd-icon">
-                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3eb1c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="cd-label">Legal Name</p>
-                        <p class="cd-value">Founders Distribution LLC</p>
-                    </div>
-                </div>
-                <div class="contact-detail">
-                    <div class="cd-icon">
-                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3eb1c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="cd-label">Email</p>
-                        <p class="cd-value"><a href="mailto:info@foundersdistribution.com">info@foundersdistribution.com</a></p>
-                    </div>
-                </div>
-                <div class="contact-detail">
-                    <div class="cd-icon">
-                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3eb1c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.6 11.55a19.79 19.79 0 01-3.07-8.67A2 2 0 013.52 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="cd-label">Phone</p>
-                        <p class="cd-value"><a href="tel:+13055199455">305-519-9455</a></p>
-                    </div>
-                </div>
-                <div class="contact-detail">
-                    <div class="cd-icon">
-                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3eb1c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="cd-label">Location</p>
-                        <p class="cd-value">Miami Beach, FL</p>
-                    </div>
-                </div>
+            <div class="contact-plain">
+                <p>Founders Distribution LLC</p>
+                <p><a href="mailto:info@foundersdistribution.com">info@foundersdistribution.com</a></p>
+                <p><a href="tel:+13055199455">305-519-9455</a></p>
+                <p>Miami Beach, FL</p>
             </div>
         </div>
 
@@ -447,11 +384,10 @@
                 <label for="category">Product Category</label>
                 <select id="category" name="category">
                     <option value="" disabled selected>Select a category</option>
+                    <option>Natural and Better-For-You</option>
                     <option>Food &amp; Beverage</option>
-                    <option>Wellness &amp; Supplements</option>
-                    <option>Natural / Better-For-You</option>
-                    <option>Lifestyle &amp; Home</option>
-                    <option>Personal Care</option>
+                    <option>Wellness</option>
+                    <option>Lifestyle</option>
                     <option>Other CPG</option>
                 </select>
             </div>

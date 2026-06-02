@@ -5,7 +5,7 @@
     --navy-dark: #0d0b38;
     --teal: #3eb1c8;
     --teal-light: #a4dbe8;
-    --orange: #ff8674;
+    --orange: #F47A20;
     --white: #ffffff;
     --gray-50: #f8fafd;
     --gray-text: #64748b;
@@ -136,9 +136,9 @@ nav {
 }
 
 .section-title {
-    font-size: clamp(30px, 3.8vw, 52px);
+    font-size: clamp(38px, 5vw, 62px);
     font-weight: 800; color: var(--navy);
-    line-height: 1.12; letter-spacing: -0.5px;
+    line-height: 1.1; letter-spacing: -0.5px;
     margin-bottom: 22px;
 }
 
@@ -308,6 +308,22 @@ nav {
 
 .pillar h3 { font-size: 19px; font-weight: 800; color: var(--navy); margin-bottom: 12px; }
 .pillar p { font-size: 14px; color: var(--gray-text); line-height: 1.75; }
+
+/* ===== CONTACT PLAIN ===== */
+.contact-plain {
+    display: flex; flex-direction: column;
+    gap: 14px; margin-top: 36px;
+}
+.contact-plain p {
+    font-size: 17px; font-weight: 500;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.4;
+}
+.contact-plain a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none; transition: color 0.2s;
+}
+.contact-plain a:hover { color: #00A3B5; }
 
 /* ===== TRUST BAND ===== */
 .trust-band {
