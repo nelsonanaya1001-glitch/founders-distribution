@@ -7,111 +7,6 @@
     <meta name="description" content="Get in touch with Founders Distribution LLC. Contact us to discuss marketplace distribution for your brand.">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .contact-page-body {
-            background: var(--gray-50);
-            padding: 60px 48px 100px;
-        }
-
-        .contact-page-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 380px 1fr;
-            gap: 60px;
-            align-items: start;
-        }
-
-        .info-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 40px 36px;
-        }
-
-        .info-card h2 {
-            font-size: 20px; font-weight: 800;
-            color: var(--navy); margin-bottom: 8px;
-        }
-
-        .info-card .sub {
-            font-size: 13px; color: var(--gray-text);
-            line-height: 1.7; margin-bottom: 32px;
-        }
-
-        .form-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 48px 44px;
-        }
-
-        .form-card h2 {
-            font-size: 22px; font-weight: 800;
-            color: var(--navy); margin-bottom: 6px;
-        }
-
-        .form-card .sub {
-            font-size: 13px; color: var(--gray-text);
-            line-height: 1.7; margin-bottom: 36px;
-        }
-
-        /* Light form style */
-        .form-light .fg label {
-            font-size: 11px; font-weight: 700;
-            letter-spacing: 1.5px; text-transform: uppercase;
-            color: rgba(26,20,105,0.5);
-        }
-
-        .form-light .fg input,
-        .form-light .fg textarea,
-        .form-light .fg select {
-            background: var(--gray-50);
-            border: 1.5px solid rgba(26,20,105,0.1);
-            color: var(--navy);
-        }
-
-        .form-light .fg input:focus,
-        .form-light .fg textarea:focus,
-        .form-light .fg select:focus {
-            border-color: var(--teal);
-            background: white;
-        }
-
-        .form-light .fg input::placeholder,
-        .form-light .fg textarea::placeholder { color: rgba(26,20,105,0.3); }
-
-        .form-light .fg select option { background: white; color: var(--navy); }
-
-        .form-light .form-submit {
-            width: 100%; align-self: stretch;
-        }
-
-        .return-policy {
-            background: linear-gradient(135deg, var(--navy), #1a3470);
-            border-radius: 14px;
-            padding: 28px 32px;
-            margin-top: 24px;
-            color: white;
-        }
-
-        .return-policy h4 {
-            font-size: 13px; font-weight: 800;
-            text-transform: uppercase; letter-spacing: 1px;
-            color: var(--teal); margin-bottom: 10px;
-        }
-
-        .return-policy p {
-            font-size: 13px; color: rgba(255,255,255,0.6);
-            line-height: 1.7;
-        }
-
-        @media (max-width: 900px) {
-            .contact-page-inner { grid-template-columns: 1fr; }
-            .contact-page-body { padding: 40px 20px 80px; }
-            .form-card { padding: 32px 24px; }
-        }
-    </style>
 </head>
 <body>
 
@@ -135,99 +30,79 @@
     </ul>
 </nav>
 
-<div class="page-hero">
-    <svg class="page-hero-bg" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMid slice">
-        <line x1="0" y1="200" x2="400" y2="100" stroke="rgba(62,177,200,0.1)" stroke-width="1.5"/>
-        <line x1="400" y1="100" x2="900" y2="280" stroke="rgba(62,177,200,0.08)" stroke-width="1.5"/>
-        <line x1="900" y1="280" x2="1440" y2="80" stroke="rgba(62,177,200,0.07)" stroke-width="1.5"/>
-        <circle cx="400" cy="100" r="5" fill="rgba(255,134,116,0.25)"/>
-        <circle cx="900" cy="280" r="4" fill="rgba(62,177,200,0.2)"/>
-    </svg>
-    <div class="page-hero-content">
-        <div class="page-eyebrow">Contact</div>
-        <h1>Let's Talk About<br>Your <span class="hl">Brand</span></h1>
-        <p class="page-hero-sub">We typically respond within one business day. Tell us where you are and what you're building.</p>
-    </div>
-</div>
+<section class="contact-section" style="padding-top:140px;padding-bottom:120px;">
+    <div class="contact-layout">
 
-<div class="contact-page-body">
-    <div class="contact-page-inner">
-
-        <!-- INFO SIDEBAR -->
+        <!-- LEFT: info + returns -->
         <div>
-            <div class="info-card">
-                <h2>Business Information</h2>
-                <p class="sub">All the details you need to reach us or verify our credentials.</p>
+            <p class="section-eyebrow">Get In Touch</p>
+            <h2 class="section-title">Let's Talk About<br>Your Brand</h2>
+            <p class="section-sub">Ready to explore marketplace distribution? We'd love to learn about where you are and where you want to go.</p>
 
-                <div style="display:flex;flex-direction:column;gap:12px;margin-top:16px;">
-                    <p style="font-size:16px;font-weight:500;color:var(--navy)">Founders Distribution LLC</p>
-                    <p style="font-size:16px;font-weight:500;color:var(--navy)"><a href="mailto:info@foundersdistribution.com" style="color:var(--navy);text-decoration:none;">info@foundersdistribution.com</a></p>
-                    <p style="font-size:16px;font-weight:500;color:var(--navy)"><a href="tel:+13055199455" style="color:var(--navy);text-decoration:none;">305-519-9455</a></p>
-                    <p style="font-size:16px;font-weight:500;color:var(--navy)">Miami Beach, FL</p>
-                </div>
+            <div class="contact-plain">
+                <p>Founders Distribution LLC</p>
+                <p><a href="mailto:info@foundersdistribution.com">info@foundersdistribution.com</a></p>
+                <p><a href="tel:+13055199455">305-519-9455</a></p>
+                <p>Miami Beach, FL</p>
             </div>
 
-            <div class="return-policy">
-                <h4>Returns &amp; Support</h4>
-                <p>For order-related inquiries, returns, or customer service questions, please email <strong>info@foundersdistribution.com</strong> or call <strong>305-519-9455</strong>. We respond within 1 business day.</p>
+            <div style="margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.1);">
+                <p style="font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#3eb1c8;margin-bottom:10px;">Returns &amp; Support</p>
+                <p style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.7;">For order-related inquiries, returns, or customer service questions, please email <strong style="color:rgba(255,255,255,0.75);">info@foundersdistribution.com</strong> or call <strong style="color:rgba(255,255,255,0.75);">305-519-9455</strong>. We respond within 1 business day.</p>
             </div>
         </div>
 
-        <!-- FORM -->
-        <div class="form-card">
-            <h2>Send Us a Message</h2>
-            <p class="sub">Tell us about your brand, where you're currently selling, and what you're hoping to achieve through marketplace distribution.</p>
+        <!-- RIGHT: form -->
+        <form class="contact-form" name="contact-page" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact-page">
+            <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
 
-            <form class="contact-form form-light" name="contact-page" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="contact-page">
-                <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+            <div class="form-row">
+                <div class="fg">
+                    <label for="fname2">First Name</label>
+                    <input type="text" id="fname2" name="first_name" placeholder="Jane" required>
+                </div>
+                <div class="fg">
+                    <label for="lname2">Last Name</label>
+                    <input type="text" id="lname2" name="last_name" placeholder="Doe" required>
+                </div>
+            </div>
+            <div class="fg">
+                <label for="email2">Email Address</label>
+                <input type="email" id="email2" name="email" placeholder="jane@yourbrand.com" required>
+            </div>
+            <div class="fg">
+                <label for="phone2">Phone (optional)</label>
+                <input type="tel" id="phone2" name="phone" placeholder="(305) 000-0000">
+            </div>
+            <div class="fg">
+                <label for="brand2">Brand / Company Name</label>
+                <input type="text" id="brand2" name="brand" placeholder="Your Brand Name" required>
+            </div>
+            <div class="fg">
+                <label for="website2">Website (optional)</label>
+                <input type="url" id="website2" name="website" placeholder="https://yourbrand.com">
+            </div>
+            <div class="fg">
+                <label for="category2">Product Category</label>
+                <select id="category2" name="category">
+                    <option value="" disabled selected>Select a category</option>
+                    <option>Natural and Better-For-You</option>
+                    <option>Food &amp; Beverage</option>
+                    <option>Wellness</option>
+                    <option>Lifestyle</option>
+                    <option>Other CPG</option>
+                </select>
+            </div>
+            <div class="fg">
+                <label for="message2">Tell Us About Your Brand</label>
+                <textarea id="message2" name="message" placeholder="Where are you currently selling? What's your annual revenue range? What's your distribution goal?" style="min-height:140px"></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message &nbsp;→</button>
+        </form>
 
-                <div class="form-row">
-                    <div class="fg">
-                        <label for="fname2">First Name</label>
-                        <input type="text" id="fname2" name="first_name" placeholder="Jane" required>
-                    </div>
-                    <div class="fg">
-                        <label for="lname2">Last Name</label>
-                        <input type="text" id="lname2" name="last_name" placeholder="Doe" required>
-                    </div>
-                </div>
-                <div class="fg">
-                    <label for="email2">Email Address</label>
-                    <input type="email" id="email2" name="email" placeholder="jane@yourbrand.com" required>
-                </div>
-                <div class="fg">
-                    <label for="phone2">Phone (optional)</label>
-                    <input type="tel" id="phone2" name="phone" placeholder="(305) 000-0000">
-                </div>
-                <div class="fg">
-                    <label for="brand2">Brand / Company Name</label>
-                    <input type="text" id="brand2" name="brand" placeholder="Your Brand Name" required>
-                </div>
-                <div class="fg">
-                    <label for="website2">Website (optional)</label>
-                    <input type="url" id="website2" name="website" placeholder="https://yourbrand.com">
-                </div>
-                <div class="fg">
-                    <label for="category2">Product Category</label>
-                    <select id="category2" name="category">
-                        <option value="" disabled selected>Select a category</option>
-                        <option>Natural and Better-For-You</option>
-                        <option>Food &amp; Beverage</option>
-                        <option>Wellness</option>
-                        <option>Lifestyle</option>
-                        <option>Other CPG</option>
-                    </select>
-                </div>
-                <div class="fg">
-                    <label for="message2">Tell Us About Your Brand</label>
-                    <textarea id="message2" name="message" placeholder="Where are you currently selling? What's your annual revenue range? What's your distribution goal?" style="min-height:140px"></textarea>
-                </div>
-                <button type="submit" class="form-submit">Send Message →</button>
-            </form>
-        </div>
     </div>
-</div>
+</section>
 
 <footer>
     <div class="footer-inner">
