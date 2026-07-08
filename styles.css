@@ -454,6 +454,66 @@ footer {
 }
 .footer-links a:hover { color: var(--teal); }
 
+/* ===== FOUNDER STORY ===== */
+.founder-story-section { background: var(--gray-50); }
+
+.founder-story-grid {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.founder-photo-wrap { flex-shrink: 0; }
+
+.founder-photo {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4/5;
+}
+
+.founder-story-heading {
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 900; color: var(--navy);
+    line-height: 1.15; letter-spacing: -0.5px;
+    margin-bottom: 28px;
+}
+
+.founder-story-text p {
+    font-size: 15px; color: var(--gray-text);
+    line-height: 1.85; margin-bottom: 16px;
+}
+
+.founder-story-closing {
+    font-style: italic;
+    color: var(--navy) !important;
+    font-weight: 600 !important;
+}
+
+.founder-sig {
+    display: flex; flex-direction: column; gap: 4px;
+    margin-top: 32px; padding-top: 28px;
+    border-top: 1px solid var(--border);
+}
+
+.founder-sig-name {
+    font-size: 17px; font-weight: 800; color: var(--navy);
+}
+
+.founder-sig-title {
+    font-size: 12px; font-weight: 600;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--teal);
+}
+
+@media (max-width: 1024px) {
+    .founder-story-grid { grid-template-columns: 1fr; gap: 48px; }
+    .founder-photo { max-width: 100%; aspect-ratio: 3/2; object-position: center top; }
+}
+
 /* ===== PROSE (legal pages) ===== */
 .prose {
     max-width: 800px; margin: 0 auto;
