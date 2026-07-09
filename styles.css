@@ -509,11 +509,6 @@ footer {
     color: var(--teal);
 }
 
-@media (max-width: 1024px) {
-    .founder-story-grid { grid-template-columns: 1fr; gap: 48px; }
-    .founder-photo { max-width: 100%; aspect-ratio: 3/2; object-position: center top; }
-}
-
 /* ===== PROSE (legal pages) ===== */
 .prose {
     max-width: 800px; margin: 0 auto;
@@ -528,28 +523,104 @@ footer {
 .prose a { color: var(--navy); }
 .prose .last-updated { font-size: 12px; color: rgba(26,20,105,0.4); margin-bottom: 40px; }
 
+/* ===== HAMBURGER (hidden on desktop) ===== */
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none; border: none;
+    cursor: pointer; padding: 8px;
+}
+.nav-hamburger span {
+    display: block; width: 24px; height: 2px;
+    background: #0D1B3D; border-radius: 2px;
+    transition: all 0.3s;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
     .services-grid { grid-template-columns: repeat(3, 1fr); }
+    .founder-story-grid { grid-template-columns: 1fr; gap: 40px; }
+    .founder-photo {
+        max-width: 100%;
+        aspect-ratio: 4/3;
+        object-position: center 35%;
+    }
 }
 
 @media (max-width: 768px) {
+    /* Nav */
     nav { padding: 0 20px; height: 64px; }
-    .nav-links { display: none; }
-    .section { padding: 64px 20px; }
-    .page-hero { padding: 110px 20px 64px; }
-    .trust-band { padding: 48px 20px; }
-    .contact-section { padding: 64px 20px; }
+    .nav-hamburger { display: flex; }
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 64px; left: 0; right: 0;
+        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 8px 20px 20px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        z-index: 999;
+    }
+    .nav-links.open { display: flex; }
+    .nav-links li { width: 100%; }
+    .nav-links a {
+        display: block; padding: 14px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 13px;
+    }
+    .nav-links li:last-child a { border-bottom: none; }
+    .nav-cta-btn {
+        margin-top: 8px;
+        display: inline-block !important;
+        padding: 12px 24px !important;
+        border-radius: 6px;
+    }
+
+    /* Sections */
+    .section { padding: 56px 20px; }
+    .container { padding: 0; }
+    .section-title { font-size: clamp(30px, 8vw, 48px); }
+    .section-sub { font-size: 15px; margin-bottom: 40px; }
+    .page-hero { padding: 100px 20px 56px; }
+    .trust-band { padding: 40px 20px; }
+    .contact-section { padding: 56px 20px; }
     footer { padding: 28px 20px; }
-    .who-layout, .contact-layout { grid-template-columns: 1fr; gap: 40px; }
+    .prose { padding: 80px 20px; }
+
+    /* Layouts */
+    .who-layout, .contact-layout { grid-template-columns: 1fr; gap: 36px; }
     .pillars-grid { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: 1fr 1fr; }
     .form-row { grid-template-columns: 1fr; }
     .footer-inner { flex-direction: column; align-items: flex-start; }
-    .trust-inner { flex-direction: column; }
-    .prose { padding: 80px 20px; }
+    .trust-inner { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .about-values { grid-template-columns: 1fr; }
+    .walmart-grid { grid-template-columns: 1fr; }
+    .mission-block { padding: 36px 24px; }
+
+    /* Who card */
+    .who-card { padding: 36px 28px; max-width: 100%; }
+
+    /* Founder story */
+    .founder-story-grid { grid-template-columns: 1fr; gap: 28px; }
+    .founder-photo {
+        aspect-ratio: 1/1;
+        object-position: center 25%;
+        border-radius: 16px;
+    }
+    .founder-story-heading { font-size: clamp(24px, 7vw, 34px); }
+    .founder-story-text p { font-size: 14px; }
 }
 
 @media (max-width: 480px) {
     .services-grid { grid-template-columns: 1fr; }
+    .section-title { font-size: clamp(28px, 9vw, 40px); }
+    .hero-trust { gap: 14px; }
 }
